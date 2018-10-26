@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Example 10-1 
+Example of Numpy
 
 @author: Satoshi Murashige
 """
