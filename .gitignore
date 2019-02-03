@@ -1,4 +1,6 @@
 
+*.pdf
+
 .DS_Store
 images/color/
 images/mono/

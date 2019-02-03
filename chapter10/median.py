@@ -38,13 +38,16 @@ img_noise = apply_noise(img, p)
 img_median = cv2.medianBlur(img, 5)
 img_blur = cv2.blur(img, (5, 5))
 
+plt.rcParams['font.size'] = 16
+plt.figure(figsize=(10, 10))
+
 plt.subplot(2, 2, 1), plt.imshow(img, cmap='gray'), plt.title('src')
 plt.subplot(2, 2, 2), plt.imshow(img_noise, cmap='gray'), plt.title(f'noise (p={p})')
 plt.subplot(2, 2, 3), plt.imshow(img_median, cmap='gray'), plt.title('dst (median)')
 plt.subplot(2, 2, 4), plt.imshow(img_blur, cmap='gray'), plt.title('dst (blur)')
 plt.tight_layout()
+
 # plt.savefig('median.pdf')
+
 plt.show()
-
-
 
